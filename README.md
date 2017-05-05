@@ -25,6 +25,6 @@ echo 1 > /proc/power/relay1
 ```
 
 The script will record the current time, active power, current, voltage, and power factor (in that order). A few notes:
- * The voltage reported by the device is the mains voltage
- * Active power = voltage * current * power factor
+ * The voltage reported by the device is the mains voltage.
+ * Active power = voltage * current * power factor.
  * If you associated the device with your wireless network, specify its new hostname/IP as an argument to the script.
