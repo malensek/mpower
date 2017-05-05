@@ -1,7 +1,7 @@
 Power Monitoring with the mPower Smart Plug
 ============
 
-(These instructions assume the mPower Mini plug. For the larger plugs, this will only concern the first plug receptacle on the device)
+(These instructions assume the mPower Mini plug. For the larger plugs, this will only monitor the first plug receptacle on the device)
 
 1. Plug in the mPower Mini
 2. Connect to the plug over WiFi
