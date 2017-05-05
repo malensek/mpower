@@ -3,7 +3,12 @@
 # mpower.sh - monitors power consumption with the Ubiquiti mPower smart plug.
 ################################################################################
 
+# The default mPower IP address is hard coded:
 host="192.168.2.20"
+
+# Enable diffie-hellman-group1-sha1 key exchange algorithm. This is the only
+# algorithm supported by the device but is weak
+# (see http://www.openssh.com/legacy.html)
 ssh_opts="-oKexAlgorithms=+diffie-hellman-group1-sha1"
 
 script=$(cat <<'EOM'
