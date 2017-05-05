@@ -12,10 +12,19 @@ ssh -oKexAlgorithms=+diffie-hellman-group1-sha1 ubnt@192.168.2.20
 ```
 5. Test to determine whether the outlet is switched on:
 ```
-  cat /proc/power/relay1
-  (returns 1 if on, 0 if off)
+cat /proc/power/relay1
+(returns 1 if on, 0 if off)
 ```
 6. If not, turn on the relay:
 ```
-  echo 1 > /proc/power/relay1
+echo 1 > /proc/power/relay1
 ```
+7. You're ready to run the monitor script in this repo:
+```
+./mpower.sh
+```
+
+The script will record the current time, active power, current, voltage, and power factor (in that order). A few notes:
+ * The voltage reported by the device is the mains voltage
+ * Active power = voltage * current * power factor
+ * If you associated the device with your wireless network, specify its new hostname/IP as an argument to the script.
