@@ -1,4 +1,7 @@
 #!/usr/bin/env bash
+################################################################################
+# mpower.sh - monitors power consumption with the Ubiquiti mPower smart plug.
+################################################################################
 
 host="192.168.2.20"
 ssh_opts="-oKexAlgorithms=+diffie-hellman-group1-sha1"
