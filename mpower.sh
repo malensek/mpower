@@ -18,10 +18,13 @@ done
 EOM
 )
 
+# If a different host/IP is specified, set it here
 if [[ -n "${1}" ]]; then
     host="${1}"
 fi
 
+# Grab the current time (in UTC since the device may not be configured with a
+# time zone). We'll use this to try to set the device time.
 now_utc=$(date -u '+%Y-%m-%d %H:%M:%S')
 
 ssh "${ssh_opts}" "ubnt@${host}" "date -u -s '${now_utc}'; ${script}"
