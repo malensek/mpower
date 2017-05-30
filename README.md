@@ -1,4 +1,4 @@
-Power Monitoring with Ubiquiti mPower
+Power Monitoring with Ubiquiti mPower Smart Plug
 ============
 
 (These instructions assume the mPower Mini smart plug. For the larger plugs, this will only monitor the first plug receptacle on the device)
